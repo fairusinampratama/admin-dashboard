@@ -1,0 +1,266 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content";
+  font-family: "Roboto";
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 3fr 4fr;
+  grid-template-areas:
+    "search-bar user-header"
+    "greet-header button-header";
+  padding: 20px 40px 5px 40px;
+  font-size: 20px;
+}
+
+.search-bar-container {
+  grid-area: search-bar;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#img1 {
+
+}
+
+input[type=text] {
+  background-color: rgb(237, 237, 237);
+  border-radius: 20px;
+  border: 0px;
+  width: 600px;
+  height: 30px;
+}
+
+.user-header-container {
+  grid-area: user-header;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-weight: bold;
+  justify-self: flex-end;
+}
+
+.user-header#username {
+  font-size: 15px;
+}
+
+.greet-header-container {
+  grid-area: greet-header;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+#img1 {
+  width: 80px;
+}
+
+.greet-header#user {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.greet-header#say {
+  font-size: 12px;
+}
+
+.greet-header#username {
+  font-size: 24px;
+}
+
+.button-header-container {
+  justify-self: flex-end;
+  align-self: center;
+  grid-area: button-header;
+  display: flex;
+  gap: 20px;
+}
+
+.button-header {
+  background-color: #38bdf8;
+  border: 0;
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  background-color: #38bdf8;
+  color: white;
+}
+
+.page-title-container,
+.sidebar-button-container {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.page-title-container {
+  margin-bottom: 20px;
+  font-size: 30px;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.sidebar-button-container#settings {
+  margin-top: 30px;
+}
+
+.main-content {
+  grid-area: main-content;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px 20px;
+  background-color: rgb(237, 237, 237);
+}
+
+.project#label,
+.announcements#label,
+.trending#label {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card-container#card {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+  border-left: orange 5px solid;
+}
+
+.card#label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card#content {
+  font-size: 15px;
+  color: rgb(72, 72, 72);
+}
+
+.card#icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.announcements-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.card-announcements#label {
+  font-weight: bold;
+}
+
+.announcements-card {
+  border-bottom: 1px solid rgb(116, 116, 116);
+  padding-bottom: 10px;
+  gap: 5px;
+}
+
+.announcements-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.announcements-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 30px 30px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-announcements#content {
+  color: rgb(72, 72, 72);
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-container-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trending-card {
+  display: flex;
+  gap: 20px;
+}
+
+.card-trending {
+  align-self: center;
+  font-size: 14px;
+}
+
+.card-trending#motto {
+  color: rgb(116, 116, 116);
+}
+
+img {
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(255, 218, 148);
+}

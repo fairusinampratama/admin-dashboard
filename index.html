@@ -1,0 +1,324 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="search-bar-container">
+          <div class="search-bar" id="icon">
+            <span class="mdi mdi-magnify"></span>
+          </div>
+          <div class="search-bar" id="input"><input type="text" /></div>
+        </div>
+        <div class="user-header-container">
+          <div class="notification-icon">
+            <span class="mdi mdi-bell-ring"></span>
+          </div>
+          <div class="user-header" id="icon">
+            <img src="../images/Dogpaw-cuate.svg" alt="Dog paw" />
+          </div>
+          <div class="user-header" id="username">Morgan Oakley</div>
+        </div>
+        <div class="greet-header-container">
+          <div class="greet-header" id="icon">
+            <img id="img1" src="../images/Dogpaw-cuate.svg" alt="Dog paw" />
+          </div>
+          <div class="greet-header" id="user">
+            <div class="greet-header" id="say">Hi there,</div>
+            <div class="greet-header" id="username">
+              Morgan Oakley (@morgan)
+            </div>
+          </div>
+        </div>
+        <div class="button-header-container">
+          <div class="button-container">
+            <input class="button-header" type="button" value="New" />
+          </div>
+          <div class="button-container">
+            <input class="button-header" type="button" value="Upload" />
+          </div>
+          <div class="button-container">
+            <input class="button-header" type="button" value="Share" />
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="page-title-container">
+          <div class="page" id="icon">
+            <span class="mdi mdi-view-dashboard"></span>
+          </div>
+          <div class="page" id="label">Dashboard</div>
+        </div>
+        <div class="sidebar-button-container" id="home">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-home"></span>
+          </div>
+          <div class="sidebar-button" id="label">Home</div>
+        </div>
+        <div class="sidebar-button-container" id="profile">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-card-account-details-outline"></span>
+          </div>
+          <div class="sidebar-button" id="label">Profile</div>
+        </div>
+        <div class="sidebar-button-container" id="messages">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-message"></span>
+          </div>
+          <div class="sidebar-button" id="label">Messages</div>
+        </div>
+        <div class="sidebar-button-container" id="history">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-clock-time-three"></span>
+          </div>
+          <div class="sidebar-button" id="label">History</div>
+        </div>
+        <div class="sidebar-button-container" id="tasks">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-file-multiple"></span>
+          </div>
+          <div class="sidebar-button" id="label">Tasks</div>
+        </div>
+        <div class="sidebar-button-container" id="communities">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-account-group"></span>
+          </div>
+          <div class="sidebar-button" id="label">Communities</div>
+        </div>
+        <div class="sidebar-button-container" id="settings">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-cog"></span>
+          </div>
+          <div class="sidebar-button" id="label">Settings</div>
+        </div>
+        <div class="sidebar-button-container" id="support">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-help-box"></span>
+          </div>
+          <div class="sidebar-button" id="label">Support</div>
+        </div>
+        <div class="sidebar-button-container" id="privacy">
+          <div class="sidebar-button" id="label">
+            <span class="mdi mdi-shield-check"></span>
+          </div>
+          <div class="sidebar-button" id="label">Privacy</div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="project-container">
+          <div class="project-label-container">
+            <div class="project" id="label">Your Projects</div>
+          </div>
+          <div class="project-card-container">
+            <div class="card-container" id="card">
+              <div class="card" id="label">Super Cool Project</div>
+              <div class="card" id="content">
+                Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                nibh erat, id facilisis felis accumsan nec.
+              </div>
+              <div class="card" id="icon">
+                <div class="card" id="icon1">
+                  <span class="mdi mdi-star-plus-outline"></span>
+                </div>
+                <div class="card" id="icon2">
+                  <span class="mdi mdi-eye-plus-outline"></span>
+                </div>
+                <div class="card" id="icon3">
+                  <span class="mdi mdi-share-variant-outline"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-container" id="card">
+              <div class="card" id="label">Less Cool Project</div>
+              <div class="card" id="content">
+                Nullam condimentum ipsum ut lectus vehicula consectur. Quisque
+                sed dolor tincidunt, consectetur sapien et, facilisis dolor.
+                Duis sem purus, dignissim ut sapien in, varius pellentesque
+                lacus.
+              </div>
+              <div class="card" id="icon">
+                <div class="card" id="icon1">
+                  <span class="mdi mdi-star-plus-outline"></span>
+                </div>
+                <div class="card" id="icon2">
+                  <span class="mdi mdi-eye-plus-outline"></span>
+                </div>
+                <div class="card" id="icon3">
+                  <span class="mdi mdi-share-variant-outline"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-container" id="card">
+              <div class="card" id="label">Impossible App</div>
+              <div class="card" id="content">
+                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+                placerat velit sagittis id.
+              </div>
+              <div class="card" id="icon">
+                <div class="card" id="icon1">
+                  <span class="mdi mdi-star-plus-outline"></span>
+                </div>
+                <div class="card" id="icon2">
+                  <span class="mdi mdi-eye-plus-outline"></span>
+                </div>
+                <div class="card" id="icon3">
+                  <span class="mdi mdi-share-variant-outline"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-container" id="card">
+              <div class="card" id="label">Easy Peasy App</div>
+              <div class="card" id="content">
+                Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
+                urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+                commodo, ac bibendum magna tincidunt.
+              </div>
+              <div class="card" id="icon">
+                <div class="card" id="icon1">
+                  <span class="mdi mdi-star-plus-outline"></span>
+                </div>
+                <div class="card" id="icon2">
+                  <span class="mdi mdi-eye-plus-outline"></span>
+                </div>
+                <div class="card" id="icon3">
+                  <span class="mdi mdi-share-variant-outline"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-container" id="card">
+              <div class="card" id="label">Card 5 Label</div>
+              <div class="card" id="content">
+                Quesque eget rutrum nisl. Nam augue justo, cursus vitae metus
+                vel, pharetra hendererit felis. Aliquam sed malesuada eros.
+              </div>
+              <div class="card" id="icon">
+                <div class="card" id="icon1">
+                  <span class="mdi mdi-star-plus-outline"></span>
+                </div>
+                <div class="card" id="icon2">
+                  <span class="mdi mdi-eye-plus-outline"></span>
+                </div>
+                <div class="card" id="icon3">
+                  <span class="mdi mdi-share-variant-outline"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-container" id="card">
+              <div class="card" id="label">Money Maker</div>
+              <div class="card" id="content">
+                Praesent convallis, libero quis congue elementum, nunc ante
+                faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                Pellentesque mollis nec sem vel aliquam.
+              </div>
+              <div class="card" id="icon">
+                <div class="card" id="icon1">
+                  <span class="mdi mdi-star-plus-outline"></span>
+                </div>
+                <div class="card" id="icon2">
+                  <span class="mdi mdi-eye-plus-outline"></span>
+                </div>
+                <div class="card" id="icon3">
+                  <span class="mdi mdi-share-variant-outline"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="announcements-container">
+            <div class="announcements-card-label">
+              <div class="announcements" id="label">Announcements</div>
+            </div>
+            <div class="announcements-card-container">
+              <div class="announcements-card" id="card">
+                <div class="card-announcements" id="label">
+                  Site Maintenance
+                </div>
+                <div class="card-announcements" id="content">
+                  Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                  ac. Donec hendrerit sodales congue...
+                </div>
+              </div>
+              <div class="announcements-card" id="card">
+                <div class="card-announcements" id="label">
+                  Community Share Day
+                </div>
+                <div class="card-announcements" id="content">
+                  Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                  Aliquam dictum accumsan porttitor...
+                </div>
+              </div>
+              <div class="announcements-card" id="card">
+                <div class="card-announcements" id="label">
+                  Updated Privacy Policy
+                </div>
+                <div class="card-announcements" id="content">
+                  Phasellus efficitur nisi eget elit consectetur, eget
+                  condimentum ante auctor. Cras fringilla sagittis sem in
+                  mattis...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-container">
+            <div class="trending-container-label">
+              <div class="trending" id="label">Trending</div>
+            </div>
+            <div class="trending-container-card">
+              <div class="trending-card" id="card">
+                <div class="card-trending" id="icon">
+                  <img src="../images/petcare-cuate.svg" alt="Pet Care Cuate" />
+                </div>
+                <div class="card-trending" id="user">
+                  <div class="card-trending" id="username">@tegan</div>
+                  <div class="card-trending" id="motto">
+                    World Peach Builder
+                  </div>
+                </div>
+              </div>
+              <div class="trending-card" id="card">
+                <div class="card-trending" id="icon">
+                  <img src="../images/Dogpaw-cuate.svg" alt="Dog paw" />
+                </div>
+                <div class="card-trending" id="user">
+                  <div class="card-trending" id="username">@morgan</div>
+                  <div class="card-trending" id="motto">Super Cool Project</div>
+                </div>
+              </div>
+              <div class="trending-card" id="card">
+                <div class="card-trending" id="icon">
+                  <img src="../images/petcare-pana.svg" alt="Pet Care Pana" />
+                </div>
+                <div class="card-trending" id="user">
+                  <div class="card-trending" id="username">@kendall</div>
+                  <div class="card-trending" id="motto">Life Changing App</div>
+                </div>
+              </div>
+              <div class="trending-card" id="card">
+                <div class="card-trending" id="icon">
+                  <img src="images/Playfulcat-bro.svg" alt="Playful Cat" />
+                </div>
+                <div class="card-trending" id="user">
+                  <div class="card-trending" id="username">@alex</div>
+                  <div class="card-trending" id="motto">No Traffic Maker</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
